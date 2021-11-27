@@ -1,0 +1,15 @@
+{
+  "vsicons.presets.angular": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "stylelint.validate": ["css", "scss"],
+  "css.validate": false, // tailwind
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#31313b",
+    "activityBar.foreground": "#ffffff"
+  },
+  "headwind.runOnSave": true
+}
