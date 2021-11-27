@@ -3,6 +3,11 @@
   "projects": {
     "admin": "apps/admin",
     "admin-e2e": "apps/admin-e2e",
+    "shared-assets": "libs/shared/assets",
+    "shared-constants": "libs/shared/constants",
+    "shared-data-models": "libs/shared/data-models",
+    "shared-environments": "libs/shared/environments",
+    "shared-styles": "libs/shared/styles",
     "viewer": "apps/viewer",
     "viewer-e2e": "apps/viewer-e2e",
     "web": "apps/web",
