@@ -2,7 +2,7 @@
   "projectType": "application",
   "root": "apps/web",
   "sourceRoot": "apps/web/src",
-  "prefix": "mm",
+  "prefix": "aoc",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",

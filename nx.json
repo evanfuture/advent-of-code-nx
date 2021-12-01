@@ -1,5 +1,5 @@
 {
-  "npmScope": "menu-menu",
+  "npmScope": "aoc",
   "affected": {
     "defaultBase": "main"
   },
@@ -45,5 +45,5 @@
       "style": "css"
     }
   },
-  "defaultProject": "admin"
+  "defaultProject": "web"
 }

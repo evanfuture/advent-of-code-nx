@@ -11,5 +11,5 @@
     "activityBar.background": "#31313b",
     "activityBar.foreground": "#ffffff"
   },
-  "headwind.runOnSave": true
+  "headwind.runOnSave": false // do it manually
 }
