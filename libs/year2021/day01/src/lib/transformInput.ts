@@ -1,1 +1,1 @@
-export const transformInput = (inputText: string) => inputText.split('\n').map(Number);
+export const transformInput = (inputText: string) => inputText.trim().split('\n').map(Number);
