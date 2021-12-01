@@ -1,6 +1,6 @@
 import { Component, Directive, NgModule, ViewChild, ViewContainerRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { Year2021Day01Component, Year2021Day01Module } from '@aoc/year2021/day01';
+import { Year2021Day01AComponent, Year2021Day01BComponent, Year2021Day01Module } from '@aoc/year2021/day01';
 
 @Directive({
   selector: '[aocAnswer]',
@@ -48,7 +48,8 @@ export class AppComponent {
   availableDays: string[] = ['01'];
   variations: string[] = ['A', 'B'];
   answers: Record<string, any> = {
-    '202101A': Year2021Day01Component,
+    '202101A': Year2021Day01AComponent,
+    '202101B': Year2021Day01BComponent,
   };
   activeAnswer = '';
 
