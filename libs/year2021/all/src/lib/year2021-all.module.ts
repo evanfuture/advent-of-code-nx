@@ -4,7 +4,7 @@ import { Year2021Day01AComponent, Year2021Day01BComponent, Year2021Day01Module }
 import { Year2021Day02AComponent, Year2021Day02BComponent, Year2021Day02Module } from '@aoc/year2021/day02';
 
 export const AVAILABLE_YEARS: string[] = ['2021'];
-export const AVAILABLE_DAYS: string[] = ['1', '2'];
+export const AVAILABLE_DAYS: string[] = ['01', '02'];
 export const VARIATIONS: string[] = ['A', 'B'];
 
 export const YEAR2021_ANSWERS: Record<string, any> = {

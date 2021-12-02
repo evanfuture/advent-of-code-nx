@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "$id": "next-day",
+  "type": "object",
+  "properties": {
+    "day": {
+      "type": "string",
+      "description": "Day number (eg. 02)",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "year": {
+      "type": "string",
+      "description": "Year (eg. 2022)",
+      "$default": {
+        "$source": "argv",
+        "index": 1
+      }
+    }
+  },
+  "required": ["day"]
+}

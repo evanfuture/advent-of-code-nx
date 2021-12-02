@@ -1,0 +1,29 @@
+import { CommonModule } from '@angular/common';
+import { Component, NgModule } from '@angular/core';
+import { inputText } from './inputs';
+import { methodA, methodB } from './methods';
+import { transformInput } from './transformInput';
+
+@Component({
+  selector: 'aoc-year<%= year %>-day<%= day %>-a',
+  template: `{{ answerA }}`,
+})
+export class Year<%= year %>Day<%= day %>AComponent {
+  inputA: number[] = transformInput(inputText);
+  answerA = methodA(this.inputA);
+}
+@Component({
+  selector: 'aoc-year<%= year %>-day<%= day %>-b',
+  template: `{{ answerB }}`,
+})
+export class Year<%= year %>Day<%= day %>BComponent {
+  inputB: number[] = transformInput(inputText);
+  answerB = methodB(this.inputB);
+}
+
+@NgModule({
+  imports: [CommonModule],
+  declarations: [Year<%= year %>Day<%= day %>AComponent, Year<%= year %>Day<%= day %>BComponent],
+  exports: [Year<%= year %>Day<%= day %>AComponent, Year<%= year %>Day<%= day %>BComponent],
+})
+export class Year<%= year %>Day<%= day %>Module {}
