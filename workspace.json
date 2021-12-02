@@ -7,6 +7,8 @@
     "shared-environments": "libs/shared/environments",
     "shared-styles": "libs/shared/styles",
     "web": "apps/web",
-    "year2021-day01": "libs/year2021/day01"
+    "year2021-all": "libs/year2021/all",
+    "year2021-day01": "libs/year2021/day01",
+    "year2021-day02": "libs/year2021/day02"
   }
 }

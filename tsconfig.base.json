@@ -15,12 +15,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@aoc/year2021/day01": ["libs/year2021/day01/src/index.ts"],
       "@aoc/shared/assets": ["libs/shared/assets/src/index.ts"],
       "@aoc/shared/constants": ["libs/shared/constants/src/index.ts"],
       "@aoc/shared/data-models": ["libs/shared/data-models/src/index.ts"],
       "@aoc/shared/environments": ["libs/shared/environments/src/index.ts"],
-      "@aoc/shared/styles": ["libs/shared/styles/src/index.ts"]
+      "@aoc/shared/styles": ["libs/shared/styles/src/index.ts"],
+      "@aoc/year2021/all": ["libs/year2021/all/src/index.ts"],
+      "@aoc/year2021/day01": ["libs/year2021/day01/src/index.ts"],
+      "@aoc/year2021/day02": ["libs/year2021/day02/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
