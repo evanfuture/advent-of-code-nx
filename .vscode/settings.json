@@ -8,7 +8,7 @@
   "stylelint.validate": ["css", "scss"],
   "css.validate": false, // tailwind
   "workbench.colorCustomizations": {
-    "activityBar.background": "#31313b",
+    "activityBar.background": "#900",
     "activityBar.foreground": "#ffffff"
   },
   "headwind.runOnSave": false // do it manually
