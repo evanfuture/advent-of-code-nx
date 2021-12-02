@@ -1,6 +1,8 @@
 # Advent of Code
 
-This project was generated using [Nx](https://nx.dev).
+This is a monorepo "starter" for forking and writing your own solutions for [Advent of Code](https://adventofcode.com/).
+
+This project was generated using [Nx](https://nx.dev), a tooling library that encourages excellent architectural practices.  This is my own preferred way to work, and so you'll find a thin Angular app, styling with Tailwind, and a few shared libs for helpers.  The bulk of the actual coding work you'll do is inside the libs folder, one lib for each day's challenge:
 
 ## For Each Day
 
@@ -8,9 +10,9 @@ First, you can run `nx workspace-generator next-day {day}` replacing `{day}` wit
 
 You can also run `npm run next-day 02` to get the same effect.
 
-This will scaffold out day 2, and add it to the lib.
+This will scaffold out day 2, and add it to the lib.  The generator also auto-adds the lib's component into main app, so you only really need to generate it and start coding.
 
-The main Angular app is just a simple contianer, but importantly, it should only fetch and run the answer-calculation script when you click on the button, which should help make this monorepo useful across many seasons.
+The main Angular app is just a simple container, but importantly, it should only fetch and run the answer-calculation script when you click on the button, which should help make this monorepo useful across many seasons.
 
 ## Active Work
 
