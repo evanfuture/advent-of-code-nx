@@ -1,6 +1,6 @@
-import { exampleAText } from './inputs.ts__tmpl__';
+import { exampleAText } from './inputs';
 import { methodA, methodB } from './methods';
-import { transformInput } from './transformInput.ts__tmpl__';
+import { transformInput } from './transformInput';
 
 describe('year<%= year %>Day<%= day %>', () => {
   it('should work for example A', () => {
