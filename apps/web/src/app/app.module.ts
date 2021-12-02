@@ -12,30 +12,34 @@ export class AnswerDirective {
 @Component({
   selector: 'aoc-root',
   template: `
-    <main class="w-full max-w-screen-md mx-auto">
-      <h1 class="mb-4">evanfuture's Advent of Code</h1>
-      <div class="flex space-x-3">
-        <div>
+    <main
+      class="relative px-4 py-10 bg-white text-gray-800 shadow-lg sm:rounded-3xl sm:p-20 w-full max-w-screen-md m-auto bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-60"
+    >
+      <h1 class="mb-4">My Advent of Code</h1>
+      <div class="flex space-x-4">
+        <div class="flex-1">
           <ng-container *ngFor="let year of years">
             <h2 class="mb-4">{{ year }}</h2>
-            <div class="flex flex-wrap px-5 space-x-3 bg-gray-600 rounded-2xl py-7">
-              <ng-container *ngFor="let day of availableDays">
-                <div
+            <div class="grid grid-cols-2 gap-4">
+              <div *ngFor="let day of availableDays" class="flex items-center space-x-1">
+                <button
                   *ngFor="let variation of variations"
-                  [ngClass]="{ 'bg-blue-800': activeAnswer === year + day + variation }"
+                  class="p-3 hover:bg-green-400 w-1/2"
+                  [ngClass]="{
+                    'bg-green-100 text-white': activeAnswer !== year + day + variation,
+                    'bg-green-800 text-white': activeAnswer === year + day + variation
+                  }"
+                  (click)="getAnswer(year, day, variation)"
                 >
                   <h3>Day {{ day }} {{ variation }}</h3>
-                  <button class="px-3 py-4 text-xs rounded-sm" (click)="getAnswer(year, day, variation)">
-                    {{ activeAnswer === year + day + variation ? 'Hide' : 'Show' }} Answer
-                  </button>
-                </div>
-              </ng-container>
+                </button>
+              </div>
             </div>
           </ng-container>
         </div>
         <div>
           <div class="mb-4">Answer:</div>
-          <div class="flex flex-wrap px-5 space-x-3 bg-gray-600 rounded-2xl py-7">
+          <div class="text-3xl">
             <ng-template aocAnswer></ng-template>
           </div>
         </div>

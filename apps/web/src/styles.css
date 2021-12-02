@@ -1,3 +1,4 @@
 body {
-  @apply h-full min-h-full bg-gray-800 text-white;
+  @apply h-full min-h-full bg-burgundy text-white font-content;
+  background-image: url('/assets/images/random-shapes.svg');
 }
