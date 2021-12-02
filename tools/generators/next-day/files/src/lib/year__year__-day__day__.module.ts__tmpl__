@@ -9,7 +9,7 @@ import { transformInput } from './transformInput';
   template: `{{ answerA }}`,
 })
 export class Year<%= year %>Day<%= day %>AComponent {
-  inputA: number[] = transformInput(inputText);
+  inputA = transformInput(inputText);
   answerA = methodA(this.inputA);
 }
 @Component({
@@ -17,7 +17,7 @@ export class Year<%= year %>Day<%= day %>AComponent {
   template: `{{ answerB }}`,
 })
 export class Year<%= year %>Day<%= day %>BComponent {
-  inputB: number[] = transformInput(inputText);
+  inputB = transformInput(inputText);
   answerB = methodB(this.inputB);
 }
 

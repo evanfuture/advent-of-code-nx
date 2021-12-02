@@ -4,14 +4,14 @@ import { transformInput } from './transformInput';
 
 describe('year<%= year %>Day<%= day %>', () => {
   it('should work for example A', () => {
-    const inputA: number[] = transformInput(exampleAText);
-    const answerA = 7;
+    const inputA = transformInput(exampleAText);
+    const answerA = 0;
     expect(methodA(inputA)).toEqual(answerA);
   });
 
   it('should work for example B', () => {
-    const inputB: number[] = transformInput(exampleAText);
-    const answerB = 5;
+    const inputB = transformInput(exampleAText);
+    const answerB = 0;
     expect(methodB(inputB)).toEqual(answerB);
   });
 });
