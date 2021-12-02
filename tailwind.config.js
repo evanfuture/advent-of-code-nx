@@ -11,15 +11,15 @@ module.exports = {
   purge: {
     content: ['./apps/**/*.{html,ts,css}', './libs/**/*.{html,ts,css}'],
   },
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
     extend: {
       colors: {
-        orange: '#fb8b24',
-        rose: '#d90368',
-        byzantium: '#820263',
-        'dark-purple': '#291720',
-        green: '#04a777',
+        burgundy: '#9d0707',
+      },
+      fontFamily: {
+        title: ['Eczar', 'serif'],
+        content: ['Montserrat', 'sans-serif'],
       },
     },
   },
