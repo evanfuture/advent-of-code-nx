@@ -11,7 +11,7 @@ describe('year2021Day03', () => {
 
   it('should work for example B', () => {
     const inputB = transformInput(exampleAText);
-    const answerB = 0;
+    const answerB = 230;
     expect(methodB(inputB)).toEqual(answerB);
   });
 });
