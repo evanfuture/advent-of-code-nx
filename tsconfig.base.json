@@ -10,7 +10,7 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
@@ -23,7 +23,8 @@
       "@aoc/year2021/all": ["libs/year2021/all/src/index.ts"],
       "@aoc/year2021/day01": ["libs/year2021/day01/src/index.ts"],
       "@aoc/year2021/day02": ["libs/year2021/day02/src/index.ts"],
-      "@aoc/year2021/day03": ["libs/year2021/day03/src/index.ts"]
+      "@aoc/year2021/day03": ["libs/year2021/day03/src/index.ts"],
+      "@aoc/year2021/day04": ["libs/year2021/day04/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
