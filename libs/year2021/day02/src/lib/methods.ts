@@ -42,7 +42,6 @@ export function methodB(inputs: [string, number][]): number {
         distance: acc.distance + distanceChange,
         aim: acc.aim + aimChange,
       };
-      console.log(val);
       return val;
     },
     { depth: 0, distance: 0, aim: 0 },

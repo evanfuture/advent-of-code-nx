@@ -8,6 +8,11 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictNullChecks": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
     "target": "es2015",
     "module": "esnext",
     "lib": ["es2020", "dom"],
@@ -27,5 +32,10 @@
       "@aoc/year2021/day04": ["libs/year2021/day04/src/index.ts"]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": ["node_modules", "tmp"],
+  "angularCompilerOptions": {
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
 }
