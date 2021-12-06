@@ -104,6 +104,31 @@ export function methodA(input: string[]): number {
   return score;
 }
 
-export function methodB(input: any[]): number {
-  return 0;
+export function methodB(input: string[]): number {
+  const { order, originalBoards } = parseInput(input);
+
+  const { winners, lastCalled } = order.reduce(
+    (acc: { winners: Board[]; boards: Board[]; lastCalled: number }, called) => {
+      if (acc.winners.length === originalBoards.length) {
+        return acc;
+      }
+
+      const updatedBoards = updateBoards(acc.boards, called);
+      const newWinners = updatedBoards.filter((board) => isWinner(board));
+      const remainder = updatedBoards.filter((board) => !isWinner(board));
+
+      return {
+        winners: [...acc.winners, ...newWinners],
+        boards: remainder,
+        lastCalled: called,
+      };
+    },
+    { winners: [], boards: originalBoards, lastCalled: null },
+  );
+
+  const unmarkedSum = winners[winners.length - 1].unmarked.reduce((sum, { value }) => sum + value, 0);
+
+  const score = unmarkedSum * lastCalled;
+
+  return score;
 }
