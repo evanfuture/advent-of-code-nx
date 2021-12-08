@@ -1,0 +1,23 @@
+{
+  "projectType": "library",
+  "root": "libs/year2021/day07",
+  "sourceRoot": "libs/year2021/day07/src",
+  "prefix": "aoc",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/year2021/day07"],
+      "options": {
+        "jestConfig": "libs/year2021/day07/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/year2021/day07/src/**/*.ts", "libs/year2021/day07/src/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}
