@@ -7,9 +7,10 @@ import { Year2021Day04AComponent, Year2021Day04BComponent, Year2021Day04Module }
 import { Year2021Day05AComponent, Year2021Day05BComponent, Year2021Day05Module } from '@aoc/year2021/day05';
 import { Year2021Day06AComponent, Year2021Day06BComponent, Year2021Day06Module } from '@aoc/year2021/day06';
 import { Year2021Day07AComponent, Year2021Day07BComponent, Year2021Day07Module } from '@aoc/year2021/day07';
+import { Year2021Day08AComponent, Year2021Day08BComponent, Year2021Day08Module } from '@aoc/year2021/day08';
 
 export const AVAILABLE_YEARS: string[] = ['2021'];
-export const AVAILABLE_DAYS: string[] = ['01', '02', '03', '04', '05', '06', '07'];
+export const AVAILABLE_DAYS: string[] = ['01', '02', '03', '04', '05', '06', '07', '08'];
 export const VARIATIONS: string[] = ['A', 'B'];
 
 export const YEAR2021_ANSWERS: Record<string, any> = {
@@ -27,6 +28,8 @@ export const YEAR2021_ANSWERS: Record<string, any> = {
   '202106B': Year2021Day06BComponent,
   '202107A': Year2021Day07AComponent,
   '202107B': Year2021Day07BComponent,
+  '202108A': Year2021Day08AComponent,
+  '202108B': Year2021Day08BComponent,
 };
 
 @NgModule({
@@ -39,6 +42,7 @@ export const YEAR2021_ANSWERS: Record<string, any> = {
     Year2021Day05Module,
     Year2021Day06Module,
     Year2021Day07Module,
+    Year2021Day08Module,
   ],
 })
 export class Year2021AllModule {}
